@@ -30,6 +30,7 @@ a{
 .container{
    width: 90%;
    margin: 0px auto;
+   border: 1px solid black;
 }
 h1,
 h2,
@@ -40,3 +41,170 @@ h3{
 p{
    font-family:  Arial, Helvetica, sans-serif;
 }
+
+/* ---------------- 
+START BANNER SECTION 
+------------------- */
+header {
+   margin-top: 50px;
+}
+.banner{
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   grid-gap: 10px;
+   background-color: #242B2E;
+   height: 577px;
+   /* padding: 50px 0px; */
+   border-radius: 30px;
+}
+.banner-title{
+  border: 1px solid yellow;
+  padding-left: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  
+}
+.banner-title h1{
+   width: 95%;
+   font-size: 4vw;
+   color: white;
+}
+.banner-title p{
+   width: 98%;
+   margin: 20px 0px;
+   font-size: 1.3vw;
+   color: rgba(232, 221, 221, 0.945);
+}
+.btn-watch-Live{
+   width: 28%;
+   padding: 15px;
+   background-color: #FF3F8C;
+   color:white;
+   font-size: 1.2rem;
+   border-radius: 10px;
+}
+.btn-watch-Live a{
+   color: white;
+   
+}
+.fa-angle-right{
+   /* margin-left: 5%; */
+   animation: button-icon 1s linear 0s infinite alternate ;
+}
+.banner-image {
+   border: 1px solid red;
+}
+.banner-image img{
+  width: 75.5%;
+  margin-left: 10%;
+  margin-top: 4%;
+}
+
+
+/* ---------------- 
+END BANNER SECTION 
+------------------- */
+/* ---------------- 
+START BLOG SECTION 
+------------------- */
+#main-content{
+   margin-bottom: 300px;
+   margin-top: 50px;
+}
+.main{
+   display: grid;
+   grid-template-columns: 250px repeat(1, 1fr);
+   grid-gap: 20px;
+}
+.side-bar{
+   border: 1px solid green;
+}
+
+.blogs{
+   /* border: 1px solid red; */
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   grid-gap: 2%;
+}
+.blog{
+   border: 1px solid goldenrod;
+   border-radius: 15px;
+}
+.blog img{
+   width: 100%;
+}
+.blog-content{
+   padding: 10px 15px;
+}
+.btn-blog{
+   background-color: rgb(212, 234, 227);
+   padding: 5px 20px;
+   border-radius: 10px;
+}
+.btn-blog a{
+   color: #242B2E;
+   font-weight: bold;
+}
+.blog-content h3{
+   margin: 15px 0px;
+   font-size: 1vw;
+}
+.icon{
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   
+}
+.icon-align{
+   margin-right: 10px;
+   color: rgba(130, 134, 137, 0.727);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ---------------- 
+END BLOG SECTION 
+------------------- */
+
+
+
+
+
+/* ---------------- 
+button animation set
+------------------- */
+@keyframes button-icon {
+   0%{
+      margin-left: 4%;
+   }
+   20%{
+      margin-left: 6%;
+   }
+   40%{
+      margin-left: 8%;
+   }
+   60%{
+      margin-left: 10%;
+   }
+   80%{
+      margin-left: 12%;
+   }
+   100%{
+      margin-left: 14%;
+   }
+}
+
+
+
+
