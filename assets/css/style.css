@@ -30,7 +30,7 @@ a{
 .container{
    width: 90%;
    margin: 0px auto;
-   border: 1px solid black;
+   /* border: 1px solid black; */
 }
 h1,
 h2,
@@ -47,6 +47,8 @@ START BANNER SECTION
 ------------------- */
 header {
    margin-top: 50px;
+   overflow: hidden;
+  box-sizing: border-box;
 }
 .banner{
    display: grid;
@@ -58,7 +60,7 @@ header {
    border-radius: 30px;
 }
 .banner-title{
-  border: 1px solid yellow;
+  /* border: 1px solid yellow; */
   padding-left: 10%;
   display: flex;
   flex-direction: column;
@@ -94,12 +96,18 @@ header {
    animation: button-icon 1s linear 0s infinite alternate ;
 }
 .banner-image {
-   border: 1px solid red;
+   /* border: 1px solid red; */
 }
 .banner-image img{
   width: 75.5%;
   margin-left: 10%;
   margin-top: 4%;
+ 
+}
+header:hover .banner-image img{
+  animation: banner-image 4s linear infinite;
+
+  
 }
 
 
@@ -110,7 +118,7 @@ END BANNER SECTION
 START BLOG SECTION 
 ------------------- */
 #main-content{
-   margin-bottom: 300px;
+   margin-bottom: 100px;
    margin-top: 50px;
 }
 .main{
@@ -121,7 +129,7 @@ START BLOG SECTION
 
 /* ........... Side bar ..............  */
 .side-bar{
-   border: 1px solid green;
+   /* border: 1px solid green; */
    display: flex;
    flex-direction: column;
    justify-content: center;
@@ -167,10 +175,21 @@ START BLOG SECTION
    background-color: rgb(212, 234, 227);
    padding: 5px 20px;
    border-radius: 10px;
+   transition: 0.4s;
+   cursor: pointer;
+   border: 1px solid black;
 }
 .btn-blog a{
    color: #242B2E;
    font-weight: bold;
+   transition: 0.4s;
+}
+.btn-blog:hover a{
+   color: white;
+}
+.btn-blog:hover{
+   background-color: #FF3F8C;
+   border: 1px solid #FF3F8C;
 }
 .blog-content h3{
    margin: 15px 0px;
@@ -189,17 +208,54 @@ START BLOG SECTION
 
 
 
+/* ---------------- 
+END BLOG SECTION 
+------------------- */
+/* ---------------- 
+START FOOTER SECTION 
+------------------- */
+footer{
+   background-color: #1a1f21;
+   /* height: 300px; */
+}
+.footer-content{
+ padding: 100px;
+}
+.footer-content h3{
+   text-align: center;
+   color: white;
+   font-weight: bold;
+   font-size: 3vw;
 
+}
+.footer-content hr{
+   width: 100%;
+   margin: 50px auto;
+   
+   border: 1px solid rgb(66, 66, 66);
+}
+.footer-content ul{
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
 
-
-
-
+}
+.footer-content ul li{
+   list-style: none;
+   padding: 0px 30px;
+}
+.footer-content ul li a{
+   color: #aeaaaa;
+   /* font-weight: bold; */
+   font-size: 1.1vw;
+}
 
 
 
 
 /* ---------------- 
-END BLOG SECTION 
+END FOOTER SECTION 
 ------------------- */
 
 
@@ -227,7 +283,29 @@ button animation set
    }
    100%{
       margin-left: 14%;
+      
    }
+}
+
+@keyframes banner-image {
+   0%{
+      transform: scale(1);
+   }
+   25%{
+      transform: scale(1.1);
+   }
+   50%{
+      transform: scale(1.2);
+   }
+   75%{
+      transform: scale(1.1);
+   }
+   100%{
+      transform: scale(1);
+   }
+
+   
+   
 }
 
 
