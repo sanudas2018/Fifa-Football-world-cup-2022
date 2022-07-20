@@ -212,7 +212,7 @@ START BLOG SECTION
 }
 .icon{
    display: grid;
-   grid-template-columns: repeat(4, 1fr);
+   grid-template-columns: repeat(3, 1fr);
    
 }
 .icon-align{
@@ -382,7 +382,7 @@ END FOOTER SECTION
 
 /* ------------------- START LARGE DEVICE RESPONSIVE SECTION ------------------- */
 
-@media only screen and (min-width: 992px) and (max-width: 1200px){
+@media only screen and (min-width: 992px) and (max-width: 1400px){
    .banner{
       height: 400px;
    }
