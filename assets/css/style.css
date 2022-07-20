@@ -219,7 +219,31 @@ START BLOG SECTION
    margin-right: 10px;
    color: rgba(130, 134, 137, 0.727);
 }
+.view-button{
+   border: 1px solid red;
+   margin: 0px auto;
+   margin-top: 80px;
+   width: 14%;
+   display: grid;
+   grid-template-columns: repeat(1, 1fr);
+   background-color: #FF3F8C;
+   border-radius: 10px;
+   border: 1px solid #FF3F8C;
+   display: none;
+   
+}
+.view-all{
+   /* margin: 0px auto; */
+   padding: 12px;
+   background-color: #FF3F8C;
+   border-radius: 10px;
+   border: 1px solid #FF3F8C;
 
+}
+.view-all a{
+   font-size: 1.3vw;
+   color: white;
+}
 
 /* ---------------- 
 END BLOG SECTION 
@@ -445,7 +469,7 @@ END FOOTER SECTION
    
    /* footer section */
    footer{
-      margin-top: 180px;
+      margin-top: 50px;
    }
    .footer-content {
       padding: 50px 0px;
@@ -464,6 +488,34 @@ END FOOTER SECTION
    .footer-content ul li a{
       font-size: 1.6vw;
    }
+
+   .view-button{
+      
+      margin-top: 180px;
+      
+      display: block;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      
+   }
+   .view-all{
+      /* margin: 0px auto; */
+      padding: 12px;
+      background-color: #FF3F8C;
+      border-radius: 10px;
+      border: 1px solid #FF3F8C;
+      
+   }
+   .view-all a{
+      font-size: 2.3vw;
+      color: white;
+      
+      /* text-align: center; */
+   }
+
+
 }   
 
 /* ------------------- START MOBILE DEVICE RESPONSIVE SECTION ------------------- */
@@ -545,6 +597,9 @@ END FOOTER SECTION
    }
 
     /* footer section  */
+    footer{
+      margin-top: 60px;
+    }
    .footer-content{
       padding: 40px;
    }
