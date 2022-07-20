@@ -30,7 +30,6 @@ a{
 .container{
    width: 90%;
    margin: 0px auto;
-   /* border: 1px solid black; */
 }
 h1,
 h2,
@@ -51,20 +50,15 @@ header {
    box-sizing: border-box;
 }
 .banner{
-   /* display: grid;
-   grid-template-columns: repeat(2, 1fr);
-   grid-gap: 10px; */
    display: flex;
    flex-direction: row;
    justify-content: space-around;
    align-items: center;
    background-color: #242B2E;
    height: 550px;
-   /* padding: 50px 0px; */
    border-radius: 30px;
 }
 .banner-title{
-  /* border: 1px solid yellow; */
   padding-left: 10%;
   display: flex;
   flex-direction: column;
@@ -98,18 +92,15 @@ header {
    
 }
 .fa-angle-right{
-   /* margin-left: 5%; */
    animation: button-icon 1s linear 0s infinite alternate ;
 }
 .banner-image {
-   /* border: 1px solid red; */
    width: 50%;
 }
 .banner-image img{
   width: 78.7%;
   margin-left: 10%;
   margin-top: 4%;
- 
 }
 header:hover .banner-image img{
   animation: banner-image 4s linear infinite;
@@ -120,13 +111,14 @@ header:hover .banner-image img{
 /* ---------------- 
 END BANNER SECTION 
 ------------------- */
+
+
 /* ---------------- 
 START BLOG SECTION 
 ------------------- */
 #main-content{
    margin-bottom: 100px;
    margin-top: 50px;
-   /* display: none; */
 }
 .main{
    display: grid;
@@ -136,7 +128,6 @@ START BLOG SECTION
 
 /* ........... Side bar ..............  */
 .side-bar{
-   /* border: 1px solid green; */
    display: flex;
    flex-direction: column;
    justify-content: center;
@@ -157,33 +148,23 @@ START BLOG SECTION
    font-size: 1.2vw;
    transition: 0.3s linear;
 }
-/* .side-bar a:link{
-   background-color: #FF3F8C;
-   color: white;
-} */
+
 .side-bar a:focus{
    background-color: #FF3F8C;
    color: white;
 }
-/* .side-bar a:visited{
-   background-color: #FF3F8C;
-   color: white;
-} */
+
 .side-bar a:hover{
    background-color: #FF3F8C;
    color: white;
 }
-/* .side-bar a:active{
-   background-color: #FF3F8C;
-   color: white;
-} */
+
 .side-bar .active{
    background-color: #FF3F8C;
    color: white;
 }
-/* ......... Blog ..........  */
+/* ......... All Blog ..........  */
 .blogs{
-   /* border: 1px solid red; */
    display: grid;
    grid-template-columns: repeat(3, 1fr);
    grid-gap: 2%;
@@ -191,9 +172,16 @@ START BLOG SECTION
 .blog{
    border: 1px solid #FF3F8C;
    border-radius: 15px;
+   transition: 0.3s;
+}
+.blog:hover{
+   box-shadow: 4px 10px 20px -5px rgba(51,67,219,0.75);
+-webkit-box-shadow: 4px 10px 20px -5px rgba(51,67,219,0.75);
+-moz-box-shadow: 4px 10px 20px -5px rgba(51,67,219,0.75);
 }
 .blog img{
    width: 100%;
+   height: 200px;
 }
 .blog-content{
    padding: 10px 15px;
@@ -233,18 +221,15 @@ START BLOG SECTION
 }
 
 
-
-
 /* ---------------- 
 END BLOG SECTION 
 ------------------- */
 
 
 /* ---------------- 
-START UPCOMING SECTION 
+START UPCOMING MATCH SECTION 
 ------------------- */
 .upcoming-match{
-
    display: grid;
    grid-template-columns: repeat(3, 1fr);
    grid-gap: 2%;
@@ -255,6 +240,12 @@ START UPCOMING SECTION
    border: 1px solid #FF3F8C;
    border-radius: 10px;
    padding: 20px;
+   transition: 0.3s;
+}
+.match-details:hover{
+   box-shadow: 4px 10px 20px -5px rgba(51,67,219,0.75);
+-webkit-box-shadow: 4px 10px 20px -5px rgba(51,67,219,0.75);
+-moz-box-shadow: 4px 10px 20px -5px rgba(51,67,219,0.75);
 }
 .flag {
    display: flex;
@@ -265,9 +256,7 @@ START UPCOMING SECTION
 .flag img{
    width: 40%;
 }
-/* .flag span{
-   margin: 0px 10px;
-} */
+
 .match-details h3{
    text-align: center;
    margin: 10px 0px;
@@ -277,18 +266,14 @@ START UPCOMING SECTION
 }
 
 /* ---------------- 
-END UPCOMING SECTION 
+END UPCOMING MATCH SECTION 
 ------------------- */
-
-
-
 
 /* ---------------- 
 START FOOTER SECTION 
 ------------------- */
 footer{
    background-color: #1a1f21;
-   /* height: 300px; */
 }
 .footer-content{
  padding: 80px 0px;
@@ -303,7 +288,6 @@ footer{
 .footer-content hr{
    width: 100%;
    margin: 40px auto;
-   
    border: 1px solid rgb(66, 66, 66);
 }
 .footer-content ul{
@@ -311,7 +295,6 @@ footer{
    flex-direction: row;
    justify-content: center;
    align-items: center;
-
 }
 .footer-content ul li{
    list-style: none;
@@ -324,17 +307,16 @@ footer{
 }
 .footer-content ul li a{
    color: #aeaaaa;
-   /* font-weight: bold; */
-   font-size: 1.5vw;
+   font-size: 1.2vw;
    transition: 0.3s;
 }
-
-
 
 
 /* ---------------- 
 END FOOTER SECTION 
 ------------------- */
+
+/* ------------------- START LARGE DEVICE RESPONSIVE SECTION ------------------- */
 
 @media only screen and (min-width: 992px) and (max-width: 1200px){
    .banner{
@@ -353,8 +335,11 @@ END FOOTER SECTION
    }
 
 }
+
+/* ------------------- START TABLET DEVICE RESPONSIVE SECTION ------------------- */
 @media only screen and (min-width: 768px) and (max-width: 991px){
    
+   /* banner section  */
    .banner{
       height: 300px;
    }
@@ -373,8 +358,11 @@ END FOOTER SECTION
       width: 75%;
 
    }
+   header:hover .banner-image img{
+      animation: banner-image 4s linear infinite;  
+   }
 
-   /* blog  */
+   /* blog section */
    #main-content{
       margin-top: 30px;
       margin-bottom: 50px;
@@ -415,7 +403,7 @@ END FOOTER SECTION
       grid-row-gap: 2%;
    }
    
-   /* footer  */
+   /* footer section */
    footer{
       margin-top: 180px;
    }
@@ -431,16 +419,16 @@ END FOOTER SECTION
       font-size: 1.6vw;
    }
 }   
+
+/* ------------------- START MOBILE DEVICE RESPONSIVE SECTION ------------------- */
 @media only screen and (min-width:500px) and (max-width:767px) {
+   /* banner section  */
    .banner{
-      /* height: 600px;
-      display: flex; */
       height: 560px;
       flex-direction: column;
       overflow: hidden;
    }
    .banner-title{
-      
       margin: 0px auto;
       text-align: center;
       width: 70%;
@@ -466,29 +454,22 @@ END FOOTER SECTION
    .btn-watch-Live a{
       font-size: 2vw;
     }
-    .banner-image {
-      /* border: 1px solid red; */
-      width: 62%;
-      /* height: 100%; */
-      margin: 0px auto;
+    .banner-image {width: 62%;
+      margin: 10px auto;
    }
-    .banner-image img{
-      /* margin-left: 60px; */
-    }
-    /* blog  */
 
-     /* blog  */
+   header .banner-image img{
+      animation: banner-image 4s linear infinite;  
+   }
+    /* blog section */
+
    #main-content{
       margin: 20px 0px;
-      
    }
    .main{
-      
       grid-template-columns: repeat(1, 1fr);
-      
    }
    .side-bar{
-    
       flex-direction: column;
       height: 150px;
       background-color: rgba(240, 242, 244, 0.655);
@@ -501,10 +482,8 @@ END FOOTER SECTION
    }
 
    .blogs{
-   
       grid-template-columns: repeat(1, 1fr);
       grid-gap: 14px;
-
    }
    .blog-content h3{
       margin: 15px 0px;
@@ -519,19 +498,19 @@ END FOOTER SECTION
       margin-bottom: 255px;
    }
 
-    /* footer  */
-    .footer-content{
+    /* footer section  */
+   .footer-content{
       padding: 40px;
-     }
-     .footer-content h3{
+   }
+   .footer-content h3{
         font-size: 5vw;
      
-     }
-     .footer-content hr{
+   }
+   .footer-content hr{
 
         margin: 10px auto;
-     }
-    .footer-content ul{
+   }
+   .footer-content ul{
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -539,10 +518,7 @@ END FOOTER SECTION
    
    }
    .footer-content ul li a{
-
       font-size: 2.1vw;
-      
-  
    }
    .footer-content ul li{
       padding: 6px 0px;
@@ -550,18 +526,15 @@ END FOOTER SECTION
     
 }
 
-/* ...........................  */
+/* ------------------- START EXTRA SMALL DEVICE RESPONSIVE SECTION ------------------- */
 @media only screen and (min-width:200px) and (max-width:500px) {
+   /* BANNER SECTION  */
    .banner{
-      /* height: 600px;
-      display: flex; */
       height: 550px;
       flex-direction: column;
       overflow: hidden;
-      
    }
    .banner-title{
-      
       margin: 0px auto;
       text-align: center;
       width: 70%;
@@ -578,7 +551,6 @@ END FOOTER SECTION
       margin: 15px auto;
       font-size: 0.8rem;
       font-size: 4.5vw;
-      
    }
    .btn-watch-Live{
       margin: 0px auto;
@@ -590,38 +562,24 @@ END FOOTER SECTION
       font-size: 4vw;
     }
     .banner-image {
-      /* border: 1px solid red; */
       width: 62%;
-      /* height: 100%; */
       margin: 0px auto;
    }
    header .banner-image img{
-      animation: banner-image 4s linear infinite;
-    
-      
-    }
-    .banner-image img{
-      /* margin-left: 60px; */
-      
-    }
-    /* blog  */
+      animation: banner-image 4s linear infinite;  
+   }
 
-     /* blog  */
+     /* BLOG SECTION  */
    #main-content{
       margin: 20px 0px;
-      
    }
    .main{
-      
       grid-template-columns: repeat(1, 1fr);
-      
    }
    .side-bar{
-    
       flex-direction: column;
       height: 150px;
       background-color: rgba(240, 242, 244, 0.655);
-      
    }
    .side-bar a{
       padding: 10px 10px;
@@ -630,34 +588,28 @@ END FOOTER SECTION
    }
 
    .blogs{
-   
       grid-template-columns: repeat(1, 1fr);
       grid-gap: 14px;
-
    }
    .blog-content h3{
       margin: 15px 0px;
       font-size: 3vw;
    }
+   /* ............. Upcoming Match ........  */
+   .upcoming-match{
+      grid-template-columns: repeat(1, 1fr);
+      grid-row-gap: 1.2%;
+      margin-bottom: 222px;
+   }
 
-      /* ............. Upcoming Match ........  */
-      .upcoming-match{
-         grid-template-columns: repeat(1, 1fr);
-         
-         grid-row-gap: 1.2%;
-         margin-bottom: 222px;
-      }
-
-    /* footer  */
+    /* FOOTER SECTION  */
     .footer-content{
       padding: 40px;
      }
      .footer-content h3{
         font-size: 5vw;
-     
      }
      .footer-content hr{
-
         margin: 10px auto;
      }
     .footer-content ul{
@@ -668,10 +620,7 @@ END FOOTER SECTION
    
    }
    .footer-content ul li a{
-
       font-size: 2.1vw;
-      
-  
    }
    .footer-content ul li{
       padding: 6px 0px;
@@ -681,9 +630,7 @@ END FOOTER SECTION
 
 
 
-/* ---------------- 
-button animation set
-------------------- */
+/* ----------------  BUTTON ANIMATION START ------------------- */
 @keyframes button-icon {
    0%{
       margin-left: 4%;
@@ -705,6 +652,8 @@ button animation set
       
    }
 }
+
+/*----------------------------- HEADER IMAGE ANIMATION START ------------------------- */
 
 @keyframes banner-image {
    0%{
