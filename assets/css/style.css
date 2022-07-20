@@ -293,6 +293,8 @@ footer{
    border: 1px solid rgb(66, 66, 66);
 }
 .footer-content ul{
+   width: 80%;
+   margin: 0px auto;
    display: flex;
    flex-direction: row;
    justify-content: center;
@@ -413,11 +415,17 @@ END FOOTER SECTION
       padding: 50px 0px;
   }
   .footer-content hr {
-
+      width: 95%;
       margin: 24px auto;
 
    }
-  .footer-content ul li a{
+   .footer-content ul{
+      width: 90%;
+   }
+   .footer-content ul li{
+      padding: 0px 15px;
+   }
+   .footer-content ul li a{
       font-size: 1.6vw;
    }
 }   
