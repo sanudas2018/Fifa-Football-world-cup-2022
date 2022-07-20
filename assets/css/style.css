@@ -46,9 +46,9 @@ p{
 START BANNER SECTION 
 ------------------- */
 header {
-   margin-top: 50px;
+   margin-top: 40px;
    overflow: hidden;
-  box-sizing: border-box;
+   box-sizing: border-box;
 }
 .banner{
    /* display: grid;
@@ -85,7 +85,7 @@ header {
    color: rgba(232, 221, 221, 0.945);
 }
 .btn-watch-Live{
-   width: 28%;
+   width: 35%;
    padding: 15px;
    background-color: #FF3F8C;
    color:white;
@@ -106,7 +106,7 @@ header {
    width: 50%;
 }
 .banner-image img{
-  width: 78.5%;
+  width: 78.7%;
   margin-left: 10%;
   margin-top: 4%;
  
@@ -117,7 +117,6 @@ header:hover .banner-image img{
   
 }
 
-
 /* ---------------- 
 END BANNER SECTION 
 ------------------- */
@@ -127,6 +126,7 @@ START BLOG SECTION
 #main-content{
    margin-bottom: 100px;
    margin-top: 50px;
+   /* display: none; */
 }
 .main{
    display: grid;
@@ -157,7 +157,27 @@ START BLOG SECTION
    font-size: 1.2vw;
    transition: 0.3s linear;
 }
+/* .side-bar a:link{
+   background-color: #FF3F8C;
+   color: white;
+} */
+.side-bar a:focus{
+   background-color: #FF3F8C;
+   color: white;
+}
+/* .side-bar a:visited{
+   background-color: #FF3F8C;
+   color: white;
+} */
 .side-bar a:hover{
+   background-color: #FF3F8C;
+   color: white;
+}
+/* .side-bar a:active{
+   background-color: #FF3F8C;
+   color: white;
+} */
+.side-bar .active{
    background-color: #FF3F8C;
    color: white;
 }
@@ -169,7 +189,7 @@ START BLOG SECTION
    grid-gap: 2%;
 }
 .blog{
-   border: 1px solid goldenrod;
+   border: 1px solid #FF3F8C;
    border-radius: 15px;
 }
 .blog img{
@@ -245,9 +265,9 @@ START UPCOMING SECTION
 .flag img{
    width: 40%;
 }
-.flag span{
-   /* margin: 0px 10px; */
-}
+/* .flag span{
+   margin: 0px 10px;
+} */
 .match-details h3{
    text-align: center;
    margin: 10px 0px;
@@ -271,7 +291,7 @@ footer{
    /* height: 300px; */
 }
 .footer-content{
- padding: 100px;
+ padding: 80px 0px;
 }
 .footer-content h3{
    text-align: center;
@@ -282,7 +302,7 @@ footer{
 }
 .footer-content hr{
    width: 100%;
-   margin: 50px auto;
+   margin: 40px auto;
    
    border: 1px solid rgb(66, 66, 66);
 }
@@ -305,7 +325,7 @@ footer{
 .footer-content ul li a{
    color: #aeaaaa;
    /* font-weight: bold; */
-   font-size: 1.1vw;
+   font-size: 1.5vw;
    transition: 0.3s;
 }
 
@@ -316,7 +336,348 @@ footer{
 END FOOTER SECTION 
 ------------------- */
 
+@media only screen and (min-width: 992px) and (max-width: 1200px){
+   .banner{
+      height: 400px;
+   }
+   .btn-watch-Live{
+      width: 40%;
+      padding: 5px 0px;
 
+   }
+   .btn-watch-Live a{
+      font-size: 1.7vw;
+    }
+   .fa-angle-right{
+      font-size: 1.8vw;
+   }
+
+}
+@media only screen and (min-width: 768px) and (max-width: 991px){
+   
+   .banner{
+      height: 300px;
+   }
+   .btn-watch-Live{
+      width: 40%;
+      padding: 5px;
+
+   }
+   .btn-watch-Live a{
+     font-size: 1.7vw;
+   }
+   .fa-angle-right{
+      font-size: 1.6vw;
+   }
+   .banner-image img{
+      width: 75%;
+
+   }
+
+   /* blog  */
+   #main-content{
+      margin-top: 30px;
+      margin-bottom: 50px;
+   }
+   .main{
+      
+      grid-template-columns: repeat(1, 1fr);
+      
+   }
+   .side-bar{
+    
+      flex-direction: row;
+      height: 80px;
+      background-color: rgba(240, 242, 244, 0.655);
+      
+   }
+   .side-bar a{
+      padding: 15px 15px;
+      width: 40%;
+      font-size: 2vw;
+   }
+
+   .blogs{
+   
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 1.5%;
+   }
+   
+   .blog-content h3{
+      margin: 15px 0px;
+      font-size: 2vw;
+   }
+
+   /* ............. Upcoming Match ........  */
+   .upcoming-match{
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 2%;
+      grid-row-gap: 2%;
+   }
+   
+   /* footer  */
+   footer{
+      margin-top: 180px;
+   }
+   .footer-content {
+      padding: 50px 0px;
+  }
+  .footer-content hr {
+
+      margin: 24px auto;
+
+   }
+  .footer-content ul li a{
+      font-size: 1.6vw;
+   }
+}   
+@media only screen and (min-width:500px) and (max-width:767px) {
+   .banner{
+      /* height: 600px;
+      display: flex; */
+      height: 560px;
+      flex-direction: column;
+      overflow: hidden;
+   }
+   .banner-title{
+      
+      margin: 0px auto;
+      text-align: center;
+      width: 70%;
+      padding-left: 0px;
+      padding-top: 30px;
+   }
+   .banner-title h1{
+      height: 80%;
+      text-align: center;
+   }
+   .banner-title p{
+      width: 80%;
+      margin: 15px auto;
+      font-size: 0.8rem;
+      
+   }
+   .btn-watch-Live{
+      margin: 0px auto;
+      width: 40%;
+      padding: 4px 0px;
+   }
+   .fa-angle-right,
+   .btn-watch-Live a{
+      font-size: 2vw;
+    }
+    .banner-image {
+      /* border: 1px solid red; */
+      width: 62%;
+      /* height: 100%; */
+      margin: 0px auto;
+   }
+    .banner-image img{
+      /* margin-left: 60px; */
+    }
+    /* blog  */
+
+     /* blog  */
+   #main-content{
+      margin: 20px 0px;
+      
+   }
+   .main{
+      
+      grid-template-columns: repeat(1, 1fr);
+      
+   }
+   .side-bar{
+    
+      flex-direction: column;
+      height: 150px;
+      background-color: rgba(240, 242, 244, 0.655);
+      
+   }
+   .side-bar a{
+      padding: 10px 10px;
+      width: 40%;
+      font-size: 2vw;
+   }
+
+   .blogs{
+   
+      grid-template-columns: repeat(1, 1fr);
+      grid-gap: 14px;
+
+   }
+   .blog-content h3{
+      margin: 15px 0px;
+      font-size: 3vw;
+   }
+
+   /* ............. Upcoming Match ........  */
+   .upcoming-match{
+      grid-template-columns: repeat(1, 1fr);
+      
+      grid-row-gap: 1.3%;
+      margin-bottom: 255px;
+   }
+
+    /* footer  */
+    .footer-content{
+      padding: 40px;
+     }
+     .footer-content h3{
+        font-size: 5vw;
+     
+     }
+     .footer-content hr{
+
+        margin: 10px auto;
+     }
+    .footer-content ul{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+   
+   }
+   .footer-content ul li a{
+
+      font-size: 2.1vw;
+      
+  
+   }
+   .footer-content ul li{
+      padding: 6px 0px;
+   }
+    
+}
+
+/* ...........................  */
+@media only screen and (min-width:200px) and (max-width:500px) {
+   .banner{
+      /* height: 600px;
+      display: flex; */
+      height: 550px;
+      flex-direction: column;
+      overflow: hidden;
+      
+   }
+   .banner-title{
+      
+      margin: 0px auto;
+      text-align: center;
+      width: 70%;
+      padding-left: 0px;
+      padding-top: 30px;
+   }
+   .banner-title h1{
+      height: 90%;
+      text-align: center;
+      font-size: 5.5vw;
+   }
+   .banner-title p{
+      width: 95%;
+      margin: 15px auto;
+      font-size: 0.8rem;
+      font-size: 4.5vw;
+      
+   }
+   .btn-watch-Live{
+      margin: 0px auto;
+      width: 60%;
+      padding: 4px 0px;
+   }
+   .fa-angle-right,
+   .btn-watch-Live a{
+      font-size: 4vw;
+    }
+    .banner-image {
+      /* border: 1px solid red; */
+      width: 62%;
+      /* height: 100%; */
+      margin: 0px auto;
+   }
+   header .banner-image img{
+      animation: banner-image 4s linear infinite;
+    
+      
+    }
+    .banner-image img{
+      /* margin-left: 60px; */
+      
+    }
+    /* blog  */
+
+     /* blog  */
+   #main-content{
+      margin: 20px 0px;
+      
+   }
+   .main{
+      
+      grid-template-columns: repeat(1, 1fr);
+      
+   }
+   .side-bar{
+    
+      flex-direction: column;
+      height: 150px;
+      background-color: rgba(240, 242, 244, 0.655);
+      
+   }
+   .side-bar a{
+      padding: 10px 10px;
+      width: 40%;
+      font-size: 2vw;
+   }
+
+   .blogs{
+   
+      grid-template-columns: repeat(1, 1fr);
+      grid-gap: 14px;
+
+   }
+   .blog-content h3{
+      margin: 15px 0px;
+      font-size: 3vw;
+   }
+
+      /* ............. Upcoming Match ........  */
+      .upcoming-match{
+         grid-template-columns: repeat(1, 1fr);
+         
+         grid-row-gap: 1.2%;
+         margin-bottom: 222px;
+      }
+
+    /* footer  */
+    .footer-content{
+      padding: 40px;
+     }
+     .footer-content h3{
+        font-size: 5vw;
+     
+     }
+     .footer-content hr{
+
+        margin: 10px auto;
+     }
+    .footer-content ul{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+   
+   }
+   .footer-content ul li a{
+
+      font-size: 2.1vw;
+      
+  
+   }
+   .footer-content ul li{
+      padding: 6px 0px;
+   }
+    
+}
 
 
 
